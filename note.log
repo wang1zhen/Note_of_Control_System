@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.4.10)  10 SEP 2019 11:44
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.4.10)  10 SEP 2019 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -893,10 +893,6 @@ File: figures/19.png Graphic file (type bmp)
  (./sections/root.tex
 File: figures/20.png Graphic file (type bmp)
 <figures/20.png>
-
-
-LaTeX Warning: Reference `20' on page 23 undefined on input line 10.
-
 ) [23
 
 
@@ -924,12 +920,6 @@ Underfull \vbox (badness 10000) detected at line 85
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
