@@ -1,0 +1,110 @@
+\section{拉普拉斯变换表与部分分式展开}
+
+拉普拉斯变换：
+
+\begin{equation*}
+    \mathscr{L}[f(t)]=F(s)=\int_{0}^{\infty} \mathrm{e}^{-s t} \mathrm{d} t[f(t)]=\int_{0}^{\infty} f(t) \mathrm{e}^{-s t} \mathrm{d} t
+\end{equation*}
+
+拉普拉斯逆变换：
+
+\begin{equation*}
+    \mathscr{L}^{-1}[F(s)]=f(t)=\frac{1}{2 \pi j} \int_{c-j \infty}^{c+j \infty} F(s) \mathrm{e}^{s t} \mathrm{d} s, \quad t>0
+\end{equation*}
+
+拉普拉斯变换表
+
+
+\begin{centering}
+    \renewcommand{\arraystretch}{2}
+    \begin{longtable}{|c|c|}
+        \hline
+            \boldmath{$f(t)$}\unboldmath &   \boldmath$F(s)$\unboldmath\\ \hline
+            $\delta(t)$ &   $1$ \\  \hline
+            $1(t)$  &   $\frac{1}{s}$\\  \hline
+            $t$ &   $\frac{1}{s^2}$\\  \hline
+            $\frac{t^{n-1}}{(n-1) !} \quad(n=1,2,3, \cdots)$    &   $\frac{1}{s^{n}}$\\  \hline
+            $t^{n} \quad(n=1,2,3, \cdots)$  &   $\frac{n !}{s^{n+1}}$   \\  \hline
+            $e^{-a t}$  &   $\frac{1}{s+a}$ \\  \hline
+            $t e^{-a t}$    &   $\frac{1}{(s+a)^{2}}$   \\  \hline
+            $\frac{1}{(n-1) !} t^{n-1} \mathrm{e}^{-a t} \quad(n=1,2,3, \cdots)$    &   $\frac{1}{(s+a)^{n}}$   \\  \hline
+            $t^{n} \mathrm{e}^{-a t} \quad(n=1,2,3, \cdots)$    &   $\frac{n !}{(s+a)^{n+1}}$   \\  \hline
+            $\sin \omega t$ &   $\frac{\omega}{s^{2}+\omega^{2}}$   \\  \hline
+            $\cos \omega t$ &   $\frac{s}{s^{2}+\omega^{2}}$    \\  \hline
+            $\sinh \omega t$    &   $\frac{\omega}{s^{2}-\omega^{2}}$   \\  \hline
+            $\cosh \omega t$    &   $\frac{s}{s^{2}-\omega^{2}}$    \\  \hline
+            $\frac{1}{a}\left(1-\mathrm{e}^{-a t}\right)$   &   $\frac{1}{s(s+a)}$  \\  \hline
+            $\frac{1}{b-a}\left(\mathrm{e}^{-a t}-\mathrm{e}^{-b t}\right)$ &   $\frac{1}{(s+a)(s+b)}$  \\  \hline
+            $\frac{1}{b-a}\left(b \mathrm{e}^{-b t}-a \mathrm{e}^{-a t}\right)$ &  $\frac{s}{(s+a)(s+b)}$   \\  \hline
+            $\frac{1}{a b}\left[1+\frac{1}{a-b}\left(b \mathrm{e}^{-a t}-a \mathrm{e}^{-b t}\right)\right]$ &   $\frac{1}{s(s+a)(s+b)}$ \\  \hline
+            $\frac{1}{a^{2}}\left(1-\mathrm{e}^{-a t}-a t \mathrm{e}^{-a t}\right)$ &   $\frac{1}{s(s+a)^{2}}$  \\  \hline
+            $\frac{1}{a^{2}}\left(at-1+\mathrm{e}^{-at}\right)$& $\frac{1}{s^{2}(s+a)}$\\   \hline
+            $\mathrm{e}^{-a t} \sin \omega t$   &   $\frac{\omega}{(s+a)^{2}+\omega^{2}}$   \\  \hline
+            $\mathrm{e}^{-a t} \cos \omega t$   &   $\frac{s+a}{(s+a)^{2}+w^{2}}$   \\  \hline
+            $\frac{\omega_{n}}{\sqrt{1-\zeta^{2}}} \mathrm{e}^{-\zeta \omega_{n} t} \sin \omega_{n} \sqrt{1-\zeta^{2}} t \quad(0<\zeta<1)$  &   $\frac{\omega_{n}^{2}}{s^{2}+2 \zeta \omega_{n} s+\omega_{n}^{2}}$  \\  \hline
+            \begin{tabular}{c}$-\frac{1}{\sqrt{1-\zeta^{2}}} \mathrm{e}^{-\zeta \omega_{n} t} \sin \left(\omega_{n} \sqrt{1-\zeta^{2}} t-\phi\right)$\\ $\phi=\arctan \frac{\sqrt{1-\zeta^{2}}}{\zeta}$\\ $(0<\zeta<1,0<\phi<\pi / 2)$\end{tabular}   &   $\frac{s}{s^{2}+2 \zeta \omega_{n} s+\omega_{n}^{2}}$    \\  \hline
+            \begin{tabular}{c}$1-\frac{1}{\sqrt{1-\zeta^{2}}} \mathrm{e}^{-\zeta \omega_{n} t} \sin \left(\omega_{n} \sqrt{1-\zeta^{2}} t+\phi\right)$\\ $\phi=\arctan \frac{\sqrt{1-\zeta^{2}}}{\zeta}$\\ $(0<\zeta<1,0<\phi<\pi / 2)$\end{tabular}   &   $\frac{s}{s(s^{2}+2 \zeta \omega_{n} s+\omega_{n}^{2})}$ \\
+            $1-\cos\omega t$    & $\frac{\omega^2}{s(s^2+\omega^2)}$    \\   \hline
+            $\omega t-\sin\omega t$    & $\frac{\omega^3}{s^2(s^2+\omega^2)}$       \\  \hline
+            $\sin\omega t-\omega t \cos\omega t$    &   $\frac{2\omega^3}{(s^2+\omega^2)^2}$    \\  \hline
+            $\frac{1}{2\omega}t\sin\omega   t$ & $\frac{s}{(s^2+\omega^2)^2}$   \\  \hline
+            $t\cos\omega t$ & $\frac{s^2-\omega^2}{(s^2+\omega^2)^2}$   \\  \hline
+            $\frac{1}{\omega_2^2-\omega_1^2}(\cos\omega_1t-\cos\omega_2t)\quad(\omega_1^2\neq\omega_2^2)$  & $\frac{s}{(s^2+\omega_1^2)(s^2+\omega_2^2)}$  \\   \hline
+            $\frac{1}{2\omega}(\sin\omega t+\omega t \cos \omega t)$  & $\frac{s^2}{(s^2+\omega^2)^2}$  \\
+        \hline
+    \end{longtable}
+\end{centering}
+
+\newpage
+拉普拉斯变换性质表
+
+\begin{centering}
+    \renewcommand{\arraystretch}{2}
+    \begin{longtable}{|c|}
+        \hline
+        $\mathscr{L}[A f(t)]=A F(s)$\\  \hline
+        $\mathscr{L}\left[f_{1}(t) \pm f_{2}(t)\right]=F_{1}(s) \pm F_{2}(s)$\\  \hline
+        $\mathscr{L}_{ \pm}\left[\frac{\mathrm{d}}{\mathrm{d} t} f(t)\right]=s F(s)-f(0 \pm)$\\  \hline
+        $\mathscr{L}_{ \pm}\left[\frac{\mathrm{d}^{2}}{\mathrm{d} t^{2}} f(t)\right]=s^{2} F(s)-s f(0 \pm)-\dot{f}(0 \pm)$\\  \hline
+        $\mathscr{L}_{ \pm}\left[\frac{\mathrm{d}^{n}}{\mathrm{d} t^{n}} f(t)\right]=s^{n} F(s)-\sum_{k=1}^{n} s^{n-k} f(0 \pm)$\\  \hline
+        $\mathscr{L}_{ \pm}\left[\int f(t) \mathrm{d} t\right]=\frac{F(s)}{s}+\frac{1}{s}\left[\int f(t) \mathrm{d} t\right]_{t=0 \pm}$\\  \hline
+        $\Laplace_{\pm}\left[\int\cdots\int f(t)(\mathrm{d}t)^n\right]=\frac{F(s)}{s^n}+\sum_{k=1}^n\frac{1}{s^{n-k+1}}\left[\int\cdots\int f(t)(\mathrm{d}t)^k\right]_{t=0\pm}$\\  \hline
+        $\mathscr{L}\left[\int_{0}^{t} f(t) \mathrm{d} t\right]=\frac{F(s)}{s}$\\  \hline
+        $\int_{0}^{\infty} f(t) \mathrm{d} t=\lim _{s \rightarrow 0} F(s)$ （前提$\int_{0}^{\infty} f(t) \mathrm{d} t$存在）\\  \hline
+        $\mathscr{L}\left[\mathbf{e}^{-\alpha t} f(t)\right]=F(s+a)$\\  \hline
+        $\mathscr{L}[f(t-\alpha) 1(t-\alpha)]=\mathrm{e}^{-\alpha s} F(s) \quad \alpha \geq 0$\\  \hline
+        $\mathscr{L}[t f(t)]=-\frac{\mathrm{d} F(s)}{\mathrm{d} s}$\\  \hline
+        $\mathscr{L}\left[t^{2} f(t)\right]=\frac{\mathrm{d}^{2}}{\mathrm{d} s^{2}} F(s)$\\  \hline
+        $\mathscr{L}\left[t^{n} f(t)\right]=(-1)^{n} \frac{\mathrm{d}^{n}}{\mathrm{d} s^{n}} F(s) \quad(n=1,2,3, \cdots)$\\  \hline
+        $\mathscr{L}\left[\frac{1}{t} f(t)\right]=\int_{s}^{\infty} F(s) d s$ （前提$\lim _{t \rightarrow 0} \frac{1}{t} f(t)$存在）\\  \hline
+        $\mathscr{L}\left[f\left(\frac{1}{a}\right)\right]=a F(a s)$\\  \hline
+        $\mathscr{L}\left[\int_{0}^{t} f_{1}(t-\tau) f_{2}(\tau) \mathrm{d} \tau\right]=F_{1}(s) F_{2}(s)$\\  \hline
+        $\mathscr{L}[f(t) g(t)]=\frac{1}{2 \pi j} \int_{c-j \infty}^{c+j \infty} F(p) G(s-p) \mathrm{d} p$\\  \hline
+        $f(0+)=\lim _{t \rightarrow 0+} f(t)=\lim _{s \rightarrow \infty} s F(s)$\\  \hline
+        $f(\infty)=\lim _{t \rightarrow \infty} f(t)=\lim _{s \rightarrow 0} s F(s)$ （前提系统稳定）\\
+        \hline
+    \end{longtable}
+\end{centering}
+
+\newpage
+
+部分分式展开
+
+$a_k$为$s=-p_k$处的留数：
+
+\begin{gather*}
+    F(s)=\frac{B(s)}{A(s)}=\frac{a_{1}}{s+p_{1}}+\frac{a_{2}}{s+p_{2}}+\cdots+\frac{a_{n}}{s+p_{n}}\\
+    a_{k}=\left[\left(s+p_{k}\right) \frac{B(s)}{A(s)}\right]_{s=-p_{k}}
+\end{gather*}
+
+多重极点情况（例）
+
+\begin{gather*}
+    F(s)=\frac{s^{2}+2 s+3}{(s+1)^{3}}\\
+    F(s)=\frac{B(s)}{A(s)}=\frac{b_{1}}{s+1}+\frac{b_{2}}{(s+1)^{2}}+\frac{b_{3}}{(s+1)^{3}}\\
+    \begin{aligned} b_{3} &=\left[(s+1)^{3} \frac{B(s)}{A(s)}\right]_{s=-1} \\ &=\left(s^{2}+2 s+3\right)_{s--1} \\ &=2 \end{aligned}\\
+    \begin{aligned} b_{2} &=\left\{\frac{\mathrm{d}}{\mathrm{d} s}\left[(s+1)^{3} \frac{B(s)}{A(s)}\right]\right\}_{s=-1} \\ &=\left[\frac{\mathrm{d}}{\mathrm{d} s}\left(s^{2}+2 s+3\right)\right]_{s=-1} \\ &=(2 s+2)_{s=-1} \\ &=0 \end{aligned}\\
+    \begin{aligned} b_{1} &=\frac{1}{2 !}\left\{\frac{\mathrm{d}^{2}}{s^{2}}\left[(s+1)^{3} \frac{B(s)}{A(s)}\right]\right\}_{s=-1} \\ &=\frac{1}{2 !}\left[\frac{\mathrm{d}^{2}}{s^{2}}\left(s^{2}+2 s+3\right)\right]_{s=-1} \\ &=\frac{1}{2}(2)=1 \end{aligned}\\
+    \begin{aligned} f(t) &=\mathscr{L}^{-1}[F(s)] \\ &=\mathscr{L}^{-1}\left[\frac{1}{s+1}\right]+\mathscr{L}^{-1}\left[\frac{0}{(s+1)^{2}}\right]+\mathscr{L}^{-1}\left[\frac{2}{(s+1)^{3}}\right] \\ &=\mathrm{e}^{-t}+0+t^{2} \mathrm{e}^{-t} \\ &=\left(1+t^{2}\right) \mathrm{e}^{-t}, \quad t \geq 0 \end{aligned}
+\end{gather*}
+
