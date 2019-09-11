@@ -53,5 +53,5 @@
 \contentsline {subsubsection}{\numberline {5.2.8}惯性负载系统（比例+微分控制）}{21}% 
 \contentsline {subsubsection}{\numberline {5.2.9}二级系统（比例+微分控制）}{21}% 
 \contentsline {section}{\numberline {6}根轨迹法}{23}% 
-\contentsline {section}{\numberline {7}频响分析 - 未完成}{24}% 
-\contentsline {section}{\numberline {8}拉普拉斯变换表与部分分式展开}{25}% 
+\contentsline {section}{\numberline {7}频响分析 - 未完成}{26}% 
+\contentsline {section}{\numberline {8}拉普拉斯变换表与部分分式展开}{27}% 

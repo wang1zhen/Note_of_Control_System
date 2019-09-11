@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.4.10)  10 SEP 2019 21:21
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.4.10)  11 SEP 2019 19:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -893,13 +893,16 @@ File: figures/19.png Graphic file (type bmp)
  (./sections/root.tex
 File: figures/20.png Graphic file (type bmp)
 <figures/20.png>
-) [23
+ [23
 
 
 ]
+File: figures/21.png Graphic file (type bmp)
+<figures/21.png>
+) [24] [25]
 \openout2 = `sections/freq.aux'.
 
- (./sections/freq.tex) [24
+ (./sections/freq.tex) [26
 
 
 ]
@@ -909,26 +912,26 @@ File: figures/20.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) detected at line 41
  []
 
-[25
+[27
 
 
-] [26]
+] [28]
 Underfull \vbox (badness 10000) detected at line 85
  []
 
-[27]) [28] (./note.aux (./sections/intro.aux) (./sections/Math.aux) (./sections/M.aux) (./sections/E.aux) (./sections/TaS.aux) (./sections/pid.aux) (./sections/root.aux) (./sections/freq.aux) (./sections/appendix.aux))
+[29]) [30] (./note.aux (./sections/intro.aux) (./sections/Math.aux) (./sections/M.aux) (./sections/E.aux) (./sections/TaS.aux) (./sections/pid.aux) (./sections/root.aux) (./sections/freq.aux) (./sections/appendix.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 21578 strings out of 494761
- 459495 string characters out of 6171306
+ 21584 strings out of 494761
+ 459571 string characters out of 6171306
  759663 words of memory out of 5000000
- 25155 multiletter control sequences out of 15000+600000
+ 25160 multiletter control sequences out of 15000+600000
  542430 words of font info for 98 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  54i,16n,73p,363b,1467s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on note.pdf (32 pages).
+Output written on note.pdf (34 pages).

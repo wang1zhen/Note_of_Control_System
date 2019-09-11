@@ -25,7 +25,7 @@
     1+\frac{K\left(s+z_{1}\right)\left(s+z_{2}\right) \cdots\left(s+z_{m}\right)}{\left(s+p_{1}\right)\left(s+p_{2}\right) \cdots\left(s+p_{n}\right)}=0
 \end{equation*}
 
-所谓根轨迹图，即为增益参数$K$由0编导无穷大时，闭环极点的轨迹。
+所谓根轨迹图，即为增益参数$K$由0变到无穷大时，闭环极点的轨迹。
 
 典型步骤：
 
@@ -40,4 +40,44 @@
         \sigma&=\frac{\sum\mbox{poles}-\sum\mbox{zeros}}{n-m}\\
         \eta_k&=\frac{(2k+1)\pi}{n-m}\quad k=0,1,2,\cdots ,n-m
     \end{align*}
+
+    得到的$\sigma$即为渐近线与实轴的交点，$\eta_k$则是渐近线可以取到的角度。
+
+    \item 确定分离点与会合点
+    
+    首先将特征方程$1+G(s) H(s)=0$化为$K=K(s)$的形式，即
+
+    \begin{equation*}
+        K=-\frac{\frac{dD}{ds}}{\frac{dM}{ds}}
+    \end{equation*}
+
+    随后令$dK/ds=0$，对应得到的$s$取值即为实轴上分离点或会合点的位置。把这个$s$代回$K=K(s)$，就可以得到该点对应的增益参数$K$。
+
+    \item 确定根轨迹与虚轴的交点
+    
+    由于极点位于虚轴上时，系统处于临界稳定状态，可以通过劳斯稳定判据确定此时对应的$K$值。使劳斯阵列第一列上的项等于零，就能得到该状态对应的$K$，再通过辅助方程，求解根轨迹与虚轴的交点。
+
+    \item 确定极点出射角与零点入射角
+    
+    将试验点取在非常靠近零点/极点的地方，利用辐角条件，即可得到对应的出射/入射角度。根轨迹从极点出发，结束于零点或无穷远点处。
+
 \end{enumerate}
+
+MatLab中，可以直接利用\textit{rlocus}函数来绘制根轨迹图。
+
+\begin{lstlisting}
+    rlocus(num,den)
+\end{lstlisting}
+
+如图\ref{21}，是一个绘制根轨迹图的例子，特征方程为：
+
+\begin{equation*}
+    0.1s^3+1.15s^2+2.5s+K(0.1s+1)=0
+\end{equation*}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/21.png}
+    \caption{绘制根轨迹图}
+    \label{21}
+\end{figure}
