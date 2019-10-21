@@ -51,7 +51,12 @@
 \contentsline {subsubsection}{\numberline {5.2.6}微分控制}{21}% 
 \contentsline {subsubsection}{\numberline {5.2.7}惯性负载系统（比例控制）}{21}% 
 \contentsline {subsubsection}{\numberline {5.2.8}惯性负载系统（比例+微分控制）}{21}% 
-\contentsline {subsubsection}{\numberline {5.2.9}二级系统（比例+微分控制）}{21}% 
+\contentsline {subsubsection}{\numberline {5.2.9}二阶系统（比例+微分控制）}{21}% 
 \contentsline {section}{\numberline {6}根轨迹法}{23}% 
-\contentsline {section}{\numberline {7}频响分析 - 未完成}{26}% 
-\contentsline {section}{\numberline {8}拉普拉斯变换表与部分分式展开}{27}% 
+\contentsline {section}{\numberline {7}频响分析法}{26}% 
+\contentsline {subsection}{\numberline {7.1}伯德图}{26}% 
+\contentsline {subsection}{\numberline {7.2}奈奎斯特图}{26}% 
+\contentsline {subsection}{\numberline {7.3}奈奎斯特稳定判据}{27}% 
+\contentsline {subsection}{\numberline {7.4}$G(s)H(s)$含有位于虚轴上零极点的特殊情况}{29}% 
+\contentsline {subsection}{\numberline {7.5}相对稳定性分析}{30}% 
+\contentsline {section}{\numberline {8}拉普拉斯变换表与部分分式展开}{31}% 
