@@ -12,11 +12,63 @@ c(t)=c_{tr}(t)+c_{ss}(t)
 
 其中，$c_{tr}(t)$为瞬态响应（transient），$c_{ss}(t)$为稳态响应（steady-state）。
 
+\subsection{灵敏度传递函数}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\linewidth]{figures/34.png}
+	\caption{典型的反馈控制系统}
+	\label{34}
+\end{figure}
+
+图\ref{34}所示的是一个典型的反馈控制系统，其中$R(s)$为输入信号，$Y(s)$为输出信号，$U(s)$为控制信号，$D_i(s), D_o(s), D_m(s)$分别为被控对象的输入、输出误差与与测量误差。
+
+\begin{align*}
+	G_0(s)&=\frac{B_0(s)}{A_0(s)}\quad&\mbox{$B_0(s), A_0(s)$互质}\\
+	C(s)&=\frac{P(s)}{L(s)}\quad&\mbox{$P(s), Ls)$互质}\\ 
+	\Lambda_0(s)=C(s)G_0(s)
+\end{align*}
+
+由此我们可以得到四个灵敏度传递函数：
+
+\begin{itemize}
+	\item Complementary Sensitivity
+	
+	\begin{equation*}
+		T_{0}(s)=\frac{\Lambda_{0}(s)}{1+\Lambda_{0}(s)}
+	\end{equation*}
+
+	\item (Output) Sensitivity
+	
+	\begin{equation*}
+		S_{0}(s)=\frac{1}{1+\Lambda_{0}(s)}
+	\end{equation*}
+
+	\item Input-disturbance Sensitivity
+	
+	\begin{equation*}
+		S_{i 0}(s)=\frac{G_{0}(s)}{1+\Lambda_{0}(s)}
+	\end{equation*}
+
+	\item Control Sensitivity
+	
+	\begin{equation*}
+		S_{u 0}(s)=\frac{C(s)}{1+\Lambda_{0}(s)}
+	\end{equation*}
+\end{itemize}
+
+从而有
+
+\begin{align*}
+	Y(s)=T_{0}(s) R(s)+S_{0}(s) D_{o}(s)+S_{i 0} D_{i}(s)-T_{0}(s) D_{m}(s)\\ 
+	U(s)=S_{u 0}(s)\left(R(s)-D_{m}(s)-D_{o}(s)-G_{0}(s) D_{i}(s)\right)
+\end{align*}
+
 \subsection{一阶系统}
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=8cm]{figures/5.png}
+	\includegraphics[width=12cm]{figures/5.png}
 	\caption{一阶系统}
 	\label{5}
 \end{figure}

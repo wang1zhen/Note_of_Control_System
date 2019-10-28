@@ -205,3 +205,139 @@
     \caption{相位裕量和增益裕量}
     \label{29}
 \end{figure}
+
+一般而言，要保证系统具有良好的稳定性，要求相位裕量$PM>30^\circ$，增益裕量$GM>15dB$，灵敏度峰值$SP<4$。
+
+\subsection{频率响应法设计控制系统（频域补偿）}
+
+开环频率响应的伯德图中，可以大致分为低频区、中频区（增益交界频率附近的区域）和高频区。
+
+低频区代表了系统的稳态特性以及对输入信号的追踪能力；中频区能体现系统的瞬态响应和相对稳定性；高频区则表征了系统的鲁棒性和拒绝干扰信号的能力。
+
+\textbf{闭环带宽}
+
+闭环带宽的定义是，当频率落在$[0,\omega_{BW}]$的范围内时，闭环传递函数的对数幅值$\geq-3dB$，即
+
+\begin{equation*}
+    20\log\left|\frac{\Lambda(j\omega)}{1+\Lambda(j\omega)}\right|\geq-3dB, \forall \omega\in[0,\omega_{BW}]
+\end{equation*}
+
+一般来说，我们估计闭环带宽是开环交界频率的$1\sim2$倍，
+
+\begin{equation*}
+    \omega_{BW}\in[\omega_c,2\omega_c]
+\end{equation*}
+
+\subsection{基础补偿器}
+
+\textbf{超前校正}
+
+超前校正装置的传递函数是
+
+\begin{gather*}
+    C(s)=K\frac{\tau_z s+1}{\tau_p s+1}=K_c\alpha \frac{Ts+1}{\alpha Ts+1}\\ 
+    0<\tau_p<\tau_z, 0<\alpha<1
+\end{gather*}
+
+超前校正装置的零极点都是稳定的，且零点在极点的右侧（零点更接近原点）。
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=8cm]{figures/30.png}
+    \caption{超前校正装置Nyquist图}
+    \label{30}
+\end{figure}
+
+图\ref{30}所示的是$K_c=1$时的Nyquist图。可以看到，最大相位超前角$\phi_m$在$\omega=\omega_M$时取到，因此
+
+\begin{gather*}
+    \sin\phi_m=\frac{1-\alpha}{1+\alpha}
+\end{gather*}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=8cm]{figures/31.png}
+    \caption{超前校正装置Bode图}
+    \label{31}
+\end{figure}
+
+图\ref{31}是对应的Bode图，可以发现$\omega_m$是两个转角频率的中点，
+
+\begin{equation*}
+    \omega_m=\frac{1}{\sqrt\alpha T}
+\end{equation*}
+
+\textbf{基于频率响应法的超前校正}
+
+超前校正能够产生足够大的相位超前角，补偿相位裕量。
+
+超前校正的步骤：
+
+\begin{itemize}
+    \item 设计超前校正装置：
+    
+    \begin{equation*}
+        C(s)=K_c\alpha\frac{Ts+1}{\alpha Ts+1}=K\frac{Ts+1}{\alpha Ts+1}
+    \end{equation*}
+
+    根据给定的静态误差常数要求，可以确定增益$K$。
+
+    \item 绘出$KG(s)$的Bode图，求出相位裕量。
+    \item 确定需要增加的相位超前角。考虑到超前校正装置会使得增益交接频率增加，导致相位裕量减少，因此需要在这个基础上额外增加$5^\circ\sim 12^\circ$来确定$\phi_m$。
+    \item 通过$\phi_m$求出衰减因子$\alpha$。接着找到$KG(s)$幅值对应为$-20\log(1/\sqrt{\alpha})$的频率作为新的增益交接频率$\omega_c$。根据$\omega_c=1/(\sqrt\alpha T)$确定$T$。
+    \item 零点位置$1/T$，极点位置$1/\alpha T$，增益$K_c=K/\alpha$。
+    \item 检查增益裕量是否满足要求。如果不满足，则改变零极点位置，重复上述步骤。
+\end{itemize}
+
+\textbf{滞后校正}
+
+滞后校正的传递函数是
+
+\begin{gather*}
+    C(s)=K\frac{\tau_z s+1}{\tau_p s+1}=K_c\beta\frac{Ts+1}{\beta T s+1}\\ 
+    0<\tau_z<\tau_p, \beta>1
+\end{gather*}
+
+滞后校正装置的零极点也是稳定的，极点位于零点的右边。
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=8cm]{figures/32.png}
+    \caption{滞后校正装置Nyquist图}
+    \label{32}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=8cm]{figures/33.png}
+    \caption{滞后校正装置Bode图}
+    \label{33}
+\end{figure}
+
+滞后校正装置的Nyquist图和Bode图如图\ref{32}和图\ref{33}所示。
+
+\textbf{基于频率响应法的滞后校正}
+
+滞后校正的主要目的是把交界频率向左推，从而使得交界频率处的相位裕量增大。
+
+滞后校正的步骤：
+
+\begin{itemize}
+    \item 设计滞后校正装置
+    
+    \begin{equation*}
+        C(s)=K_c\beta\frac{Ts+1}{\beta Ts+1}=K\frac{Ts+1}{\beta Ts+1}
+    \end{equation*}
+
+    根据给定的静态误差常数要求，可以确定增益$K$。
+
+    \item 检查仅通过增益$K$得到的系统$KG(s)$是否满足相位裕量和增益裕量的性能指标。若不满足，则寻找一个新的频率，使得该点上的相角等于$-180^\circ$加要求的相位裕量。要求的相位裕量应等于指定的相位裕量额外增加$5^\circ\sim 12^\circ$来补偿滞后校正装置带来的相位滞后。选择这个频率作为新的增益交界频率。
+    \item 滞后校正装置的极点和零点应远低于新的增益交界频率，因此选取转角频率$\omega=1/T$比交界频率低一倍到十倍频程。
+    \item 确定复制曲线在新的交界频率下降到$0dB$所需的衰减量，该衰减量等于$-20\log\beta$，从而确定$\beta$。
+    \item 确定增益$K_c=K/\beta$。
+    \item 检查是否满足要求，否则重复上述步骤。
+\end{itemize}
+
+\textbf{超前-滞后校正}
+
+暂时先空着
