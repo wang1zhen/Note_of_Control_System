@@ -1,6 +1,6 @@
-\section{PID - 未完成（再包入第8章）}
+\section{PID控制}
 
-所有PID控制器都是作用在误差信号$e(t)$上的。
+所有PID控制器都是作用在误差信号$e(t)=r(t)-y(t)$上的。
 
 \subsection{PID控制器}
 
@@ -242,5 +242,60 @@ e_{ss}=\frac{B}{K_p}
 为了减小稳态误差，可以提高增益$K_p$、减小$B$，同时为了补偿阻尼比，减小振荡，还应同步地增大$K_d$，最终使阻尼比$\zeta$落在$0.4\sim0.7$的可以接受的范围内。
 
 
+\subsection{Zeigler-Nichols调节法则}
 
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=8cm]{figures/35.png}
+	\caption{PID控制}
+	\label{35}
+\end{figure}
 
+齐格勒-尼柯尔斯法则是用来调整如图\ref{35}所示的PID控制系统的，可以给出一些比较稳定的$K_p$, $T_i$和$T_d$值。
+
+\subsubsection{第一种方法}
+
+第一种方法适用于拥有如图\ref{36}所示的S形曲线阶跃响应的系统。
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=8cm]{figures/36.png}
+	\caption{第一种方法适用的阶跃响应曲线}
+	\label{36}
+\end{figure}
+
+此时被控对象的传递函数可以近似为：
+
+\begin{equation*}
+	\frac{C(s)}{U(s)}=\frac{K \mathrm{e}^{-L s}}{T s+1}
+\end{equation*}
+
+根据阶跃响应曲线得到的$L$和$T$值，第一种方法给出的PID参数如下：
+
+\begin{table}[!h]
+	\centering
+	\caption{第一种方法}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		控制器类型	&	$K_p$	&	$T_i$	&	$T_d$\\\hline
+		P	&	$\frac{T}{L}$	&	$\infty$	&	$0$	\\\hline
+		PI	&	$0.9\frac{T}{L}$	&	$\frac{L}{0.3}$	&	$0$	\\\hline
+		PID	&	$1.2\frac{T}{L}$	&	$2L$	&	$0.5L$	\\\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{第二种方法}
+
+第二种方法中，我们首先只采用比例控制器$K_p$。让$K_p$从$0$逐渐增加，直到达到临界值$K_{cr}$，此处的临界是指系统开始出现持续振荡（如果$K_p$的取值无法影响到系统稳定性，则这种方法就失效了）。通过实验确定临界增益$K_{cr}$和对应的周期$P_{cr}$。第二种方法给出了如下的调整法则：
+
+\begin{table}[!h]
+	\centering
+	\caption{第二种方法}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		控制器类型	&	$K_p$	&	$T_i$	&	$T_d$\\\hline
+		P	&	$0.5K_{cr}$	&	$\infty$	&	$0$	\\\hline
+		PI	&	$0.45K_{cr}$	&	$\frac{1}{1.2}P_{cr}$	&	$0$	\\\hline
+		PID	&	$0.6K_{cr}$	&	$0.5P_{cr}$	&	$0.125P_{cr}$	\\\hline
+	\end{tabular}
+\end{table}

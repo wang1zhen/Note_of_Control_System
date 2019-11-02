@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {4.7}单位反馈控制系统中的稳态误差}{17}% 
 \contentsline {subsubsection}{\numberline {4.7.1}控制系统分类}{17}% 
 \contentsline {subsubsection}{\numberline {4.7.2}稳态误差}{17}% 
-\contentsline {section}{\numberline {5}PID - 未完成（再包入第8章）}{19}% 
+\contentsline {section}{\numberline {5}PID控制}{19}% 
 \contentsline {subsection}{\numberline {5.1}PID控制器}{19}% 
 \contentsline {subsubsection}{\numberline {5.1.1}比例控制作用}{19}% 
 \contentsline {subsubsection}{\numberline {5.1.2}积分控制作用}{19}% 
@@ -53,13 +53,16 @@
 \contentsline {subsubsection}{\numberline {5.2.7}惯性负载系统（比例控制）}{22}% 
 \contentsline {subsubsection}{\numberline {5.2.8}惯性负载系统（比例+微分控制）}{22}% 
 \contentsline {subsubsection}{\numberline {5.2.9}二阶系统（比例+微分控制）}{22}% 
-\contentsline {section}{\numberline {6}根轨迹法}{24}% 
-\contentsline {section}{\numberline {7}频响分析法}{27}% 
-\contentsline {subsection}{\numberline {7.1}伯德图}{27}% 
-\contentsline {subsection}{\numberline {7.2}奈奎斯特图}{27}% 
-\contentsline {subsection}{\numberline {7.3}奈奎斯特稳定判据}{28}% 
-\contentsline {subsection}{\numberline {7.4}$G(s)H(s)$含有位于虚轴上零极点的特殊情况}{30}% 
-\contentsline {subsection}{\numberline {7.5}相对稳定性分析}{31}% 
-\contentsline {subsection}{\numberline {7.6}频率响应法设计控制系统（频域补偿）}{32}% 
-\contentsline {subsection}{\numberline {7.7}基础补偿器}{32}% 
-\contentsline {section}{\numberline {8}拉普拉斯变换表与部分分式展开}{36}% 
+\contentsline {subsection}{\numberline {5.3}Zeigler-Nichols调节法则}{23}% 
+\contentsline {subsubsection}{\numberline {5.3.1}第一种方法}{23}% 
+\contentsline {subsubsection}{\numberline {5.3.2}第二种方法}{24}% 
+\contentsline {section}{\numberline {6}根轨迹法}{25}% 
+\contentsline {section}{\numberline {7}频响分析法}{28}% 
+\contentsline {subsection}{\numberline {7.1}伯德图}{28}% 
+\contentsline {subsection}{\numberline {7.2}奈奎斯特图}{28}% 
+\contentsline {subsection}{\numberline {7.3}奈奎斯特稳定判据}{29}% 
+\contentsline {subsection}{\numberline {7.4}$G(s)H(s)$含有位于虚轴上零极点的特殊情况}{31}% 
+\contentsline {subsection}{\numberline {7.5}相对稳定性分析}{32}% 
+\contentsline {subsection}{\numberline {7.6}频率响应法设计控制系统（频域补偿）}{33}% 
+\contentsline {subsection}{\numberline {7.7}基础补偿器}{33}% 
+\contentsline {section}{\numberline {8}拉普拉斯变换表与部分分式展开}{37}% 

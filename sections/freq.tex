@@ -338,6 +338,46 @@
     \item 检查是否满足要求，否则重复上述步骤。
 \end{itemize}
 
-\textbf{超前-滞后校正}
+\textbf{滞后-超前校正}
 
-暂时先空着
+滞后-超前校正装置的传递函数为
+
+\begin{equation*}
+    G_{c}(s)=K_{c}\left(\frac{s+\frac{1}{T_{1}}}{s+\frac{\gamma}{T_{1}}}\right)\left(\frac{s+\frac{1}{T_{2}}}{s+\frac{1}{\beta T_{2}}}\right), \gamma>1, \beta>1
+\end{equation*}
+
+其中
+
+\begin{equation*}
+    \frac{s+\frac{1}{T_{1}}}{s+\frac{\gamma}{T_{1}}}=\frac{1}{\gamma}\left(\frac{T_{1} s+1}{\frac{T_{1}}{\gamma} s+1}\right)
+\end{equation*}
+
+起到超前校正作用，
+
+\begin{equation*}
+    \frac{s+\frac{1}{T_{2}}}{s+\frac{1}{\beta T_{2}}}=\beta\left(\frac{T_{2} s+1}{\beta T_{2} s+1}\right) \quad(\beta>1)
+\end{equation*}
+
+起到滞后校正作用。
+
+一般在设计时，可以选择$\gamma=\beta$，这样做可以减小自由度（不是必须的）。$K_c=1$时，滞后-超前校正装置的Nyquist图和Bode图如图\ref{37}、\ref{38}所示。
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=8cm]{figures/37.png}
+    \caption{滞后-超前校正装置Nyquist图}
+    \label{37}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=8cm]{figures/38.png}
+    \caption{滞后-超前校正装置Bode图}
+    \label{38}
+\end{figure}
+
+当$0<\omega<\omega_1$时，该装置有滞后作用；$\omega_1<\omega<\infty$时，该装置有超前作用。其中，$\omega_1$为相角为零时的频率，
+
+\begin{equation*}
+    \omega_1=\frac{1}{\sqrt{T_1T_2}}
+\end{equation*}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.4.10)  29 OCT 2019 02:03
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.4.10)  3 NOV 2019 03:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -652,7 +652,7 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 Package: xeCJK-listings 2018/04/30 v3.7.1 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count309
 \l__xeCJK_listings_flag_int=\count310
-) (./note.aux (./sections/intro.aux) (./sections/Math.aux) (./sections/M.aux) (./sections/E.aux) (./sections/TaS.aux) (./sections/pid.aux) (./sections/root.aux) (./sections/freq.aux) (./sections/appendix.aux))
+) (./note.aux (./sections/Math.aux) (./sections/M.aux) (./sections/E.aux) (./sections/TaS.aux) (./sections/pid.aux) (./sections/root.aux) (./sections/freq.aux) (./sections/appendix.aux))
 \openout1 = `note.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -777,23 +777,16 @@ Package chemgreek Info: Activating mapping `fontspec' on line 41.
 \c@lstlisting=\count311
  [1
 
-]
-\openout2 = `sections/intro.aux'.
-
- (./sections/intro.tex) [2
-
 ] (./note.toc
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 2.
 
-[3
-
-])
+[2])
 \tf@toc=\write3
 \openout3 = `note.toc'.
 
- [4]
+ [3]
 \openout2 = `sections/Math.aux'.
 
  (./sections/Math.tex
@@ -861,12 +854,7 @@ File: figures/4.png Graphic file (type bmp)
  (./sections/TaS.tex
 File: figures/34.png Graphic file (type bmp)
 <figures/34.png>
-
-Overfull \hbox (6.64433pt too wide) in paragraph at lines 24--25
-[]\TU/SimSun(0)/m/n/10.53937 图 \TU/lmr/m/n/10.53937 4.5[]\TU/SimSun(0)/m/n/10.53937 所 示 的 是 一 个 典 型 的 反 馈 控 制 系 统，|  其 中 $\OML/cmm/m/it/10.53937 R\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 s\OT1/cmr/m/n/10.53937 )$ \TU/SimSun(0)/m/n/10.53937 为 输 入 信 号，| $\OML/cmm/m/it/10.53937 Y\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 s\OT1/cmr/m/n/10.53937 )$ \TU/SimSun(0)/m/n/10.53937 为 输 出 信 号，| $\OML/cmm/m/it/10.53937 U\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 s\OT1/cmr/m/n/10.53937 )$ \TU/SimSun(0)/m/n/10.53937 为 控 制 信 号，| $\OML/cmm/m/it/10.53937 D[]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 s\OT1/cmr/m/n/10.53937 )\OML/cmm/m/it/10.53937 ; D[]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 s\OT1/cmr/m/n/10.53937 )\OML/cmm/m/it/10.53937 ; D[]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 s\OT1/cmr/m/n/10.53937 )$
- []
-
-[8
+ [8
 
 
 ]
@@ -889,12 +877,7 @@ File: figures/11.png Graphic file (type bmp)
 <figures/11.png>
 File: figures/12.png Graphic file (type bmp)
 <figures/12.png>
- [14] [15] [16] [17]
-LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 495.
-LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
-(Font)              scaled to size 6.0pt on input line 495.
-) [18]
+ [14] [15] [16] [17]) [18]
 \openout2 = `sections/pid.aux'.
 
  (./sections/pid.tex [19
@@ -917,19 +900,28 @@ File: figures/18.png Graphic file (type bmp)
 <figures/18.png>
 File: figures/19.png Graphic file (type bmp)
 <figures/19.png>
- [22]) [23]
+ [22]
+File: figures/35.png Graphic file (type bmp)
+<figures/35.png>
+File: figures/36.png Graphic file (type bmp)
+<figures/36.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23]) [24]
 \openout2 = `sections/root.aux'.
 
  (./sections/root.tex
 File: figures/20.png Graphic file (type bmp)
 <figures/20.png>
- [24
+ [25
 
 
 ]
 File: figures/21.png Graphic file (type bmp)
 <figures/21.png>
-) [25] [26]
+) [26] [27]
 \openout2 = `sections/freq.aux'.
 
  (./sections/freq.tex
@@ -937,65 +929,72 @@ File: figures/22.png Graphic file (type bmp)
 <figures/22.png>
 File: figures/23.png Graphic file (type bmp)
 <figures/23.png>
- [27
+ [28
 
 
 ]
 File: figures/24.png Graphic file (type bmp)
 <figures/24.png>
- [28]
+ [29]
 File: figures/25.png Graphic file (type bmp)
 <figures/25.png>
 LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
 (Font)              scaled to size 12.045pt on input line 121.
 LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
 (Font)              scaled to size 8.0pt on input line 121.
+LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
+(Font)              scaled to size 6.0pt on input line 121.
 File: figures/26.png Graphic file (type bmp)
 <figures/26.png>
- [29]
+ [30]
 File: figures/27.png Graphic file (type bmp)
 <figures/27.png>
- [30]
+ [31]
 File: figures/28.png Graphic file (type bmp)
 <figures/28.png>
 File: figures/29.png Graphic file (type bmp)
 <figures/29.png>
- [31]
+ [32]
 File: figures/30.png Graphic file (type bmp)
 <figures/30.png>
 File: figures/31.png Graphic file (type bmp)
 <figures/31.png>
- [32] [33]
+ [33] [34]
 File: figures/32.png Graphic file (type bmp)
 <figures/32.png>
 File: figures/33.png Graphic file (type bmp)
 <figures/33.png>
- [34]) [35]
+ [35]
+File: figures/37.png Graphic file (type bmp)
+<figures/37.png>
+File: figures/38.png Graphic file (type bmp)
+<figures/38.png>
+) [36]
 \openout2 = `sections/appendix.aux'.
 
  (./sections/appendix.tex
 Underfull \vbox (badness 10000) detected at line 41
  []
 
-[36
+[37
 
 
-] [37]
+] [38]
 Underfull \vbox (badness 10000) detected at line 85
  []
 
-[38]) [39] (./note.aux (./sections/intro.aux) (./sections/Math.aux) (./sections/M.aux) (./sections/E.aux) (./sections/TaS.aux) (./sections/pid.aux) (./sections/root.aux) (./sections/freq.aux) (./sections/appendix.aux))
+[39]) [40] (./note.aux (./sections/Math.aux) (./sections/M.aux) (./sections/E.aux) (./sections/TaS.aux) (./sections/pid.aux) (./sections/root.aux) (./sections/freq.aux) (./sections/appendix.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 21846 strings out of 494761
- 464117 string characters out of 6171306
- 764714 words of memory out of 5000000
- 25396 multiletter control sequences out of 15000+600000
- 542748 words of font info for 100 fonts, out of 8000000 for 9000
+ 21791 strings out of 494761
+ 460435 string characters out of 6171306
+ 763714 words of memory out of 5000000
+ 25350 multiletter control sequences out of 15000+600000
+ 541444 words of font info for 94 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  54i,16n,73p,363b,1467s stack positions out of 5000i,500n,10000p,200000b,80000s
 

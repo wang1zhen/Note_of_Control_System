@@ -21,12 +21,12 @@ c(t)=c_{tr}(t)+c_{ss}(t)
 	\label{34}
 \end{figure}
 
-图\ref{34}所示的是一个典型的反馈控制系统，其中$R(s)$为输入信号，$Y(s)$为输出信号，$U(s)$为控制信号，$D_i(s), D_o(s), D_m(s)$分别为被控对象的输入、输出误差与与测量误差。
+图\ref{34}所示的是一个典型的反馈控制系统，其中$R(s)$为输入信号，$Y(s)$为输出信号，$U(s)$为控制信号，$D_i(s)$, $D_o(s)$, $D_m(s)$分别为被控对象的输入、输出误差与与测量误差。
 
 \begin{align*}
 	G_0(s)&=\frac{B_0(s)}{A_0(s)}\quad&\mbox{$B_0(s), A_0(s)$互质}\\
 	C(s)&=\frac{P(s)}{L(s)}\quad&\mbox{$P(s), Ls)$互质}\\ 
-	\Lambda_0(s)=C(s)G_0(s)
+	\Lambda_0(s)&=C(s)G_0(s)
 \end{align*}
 
 由此我们可以得到四个灵敏度传递函数：
@@ -491,15 +491,16 @@ e_{ss}&=\lim_{t\to\infty}e(t)=\lim_{s\to0}sE(s)=\lim_{s\to0}\frac{sR(s)}{1+G(s)}
 
 稳态误差小结：
 
-\begin{small}
-	\begin{tabular}{cccc}
-		\centering
-			&	阶跃输入$r(t)=1$	&	斜坡输入$r(t)=t$	&	加速度输入$r(t)=\frac12t^2$\\
-		0型系统&	$\frac{1}{1+K}$	&$\infty$	&	$\infty$\\
-		1型系统&$0$	&$\frac1K$&$\infty$\\
-		2型系统&$0$	&$0$	&$\frac1K$
-		\end{tabular}
-\end{small}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+			\hline
+				&	阶跃输入$r(t)=1$	&	斜坡输入$r(t)=t$	&	加速度输入$r(t)=\frac12t^2$\\\hline
+			0型系统&	$\frac{1}{1+K}$	&$\infty$	&	$\infty$\\\hline
+			1型系统&$0$	&$\frac1K$&$\infty$\\\hline
+			2型系统&$0$	&$0$	&$\frac1K$\\\hline
+	\end{tabular}
+\end{center}
+
 
 
 
