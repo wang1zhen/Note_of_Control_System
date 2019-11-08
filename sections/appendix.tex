@@ -102,7 +102,7 @@ $a_k$为$s=-p_k$处的留数：
 \begin{gather*}
     F(s)=\frac{s^{2}+2 s+3}{(s+1)^{3}}\\
     F(s)=\frac{B(s)}{A(s)}=\frac{b_{1}}{s+1}+\frac{b_{2}}{(s+1)^{2}}+\frac{b_{3}}{(s+1)^{3}}\\
-    \begin{aligned} b_{3} &=\left[(s+1)^{3} \frac{B(s)}{A(s)}\right]_{s=-1} \\ &=\left(s^{2}+2 s+3\right)_{s--1} \\ &=2 \end{aligned}\\
+    \begin{aligned} b_{3} &=\left[(s+1)^{3} \frac{B(s)}{A(s)}\right]_{s=-1} \\ &=\left(s^{2}+2 s+3\right)_{s=-1} \\ &=2 \end{aligned}\\
     \begin{aligned} b_{2} &=\left\{\frac{\mathrm{d}}{\mathrm{d} s}\left[(s+1)^{3} \frac{B(s)}{A(s)}\right]\right\}_{s=-1} \\ &=\left[\frac{\mathrm{d}}{\mathrm{d} s}\left(s^{2}+2 s+3\right)\right]_{s=-1} \\ &=(2 s+2)_{s=-1} \\ &=0 \end{aligned}\\
     \begin{aligned} b_{1} &=\frac{1}{2 !}\left\{\frac{\mathrm{d}^{2}}{s^{2}}\left[(s+1)^{3} \frac{B(s)}{A(s)}\right]\right\}_{s=-1} \\ &=\frac{1}{2 !}\left[\frac{\mathrm{d}^{2}}{s^{2}}\left(s^{2}+2 s+3\right)\right]_{s=-1} \\ &=\frac{1}{2}(2)=1 \end{aligned}\\
     \begin{aligned} f(t) &=\mathscr{L}^{-1}[F(s)] \\ &=\mathscr{L}^{-1}\left[\frac{1}{s+1}\right]+\mathscr{L}^{-1}\left[\frac{0}{(s+1)^{2}}\right]+\mathscr{L}^{-1}\left[\frac{2}{(s+1)^{3}}\right] \\ &=\mathrm{e}^{-t}+0+t^{2} \mathrm{e}^{-t} \\ &=\left(1+t^{2}\right) \mathrm{e}^{-t}, \quad t \geq 0 \end{aligned}

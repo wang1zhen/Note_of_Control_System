@@ -48,10 +48,10 @@
     首先将特征方程$1+G(s) H(s)=0$化为$K=K(s)$的形式，即
 
     \begin{equation*}
-        K=-\frac{\frac{dD}{ds}}{\frac{dM}{ds}}
+        K=-\frac{\left(s+p_{1}\right)\left(s+p_{2}\right) \cdots\left(s+p_{n}\right)}{\left(s+z_{1}\right)\left(s+z_{2}\right) \cdots\left(s+z_{m}\right)}
     \end{equation*}
 
-    随后令$dK/ds=0$，对应得到的$s$取值即为实轴上分离点或会合点的位置。把这个$s$代回$K=K(s)$，就可以得到该点对应的增益参数$K$。
+    随后令$dK/ds=0$，对应得到的$s$取值即为实轴上分离点或会合点的位置。把这个$s$代回$K=K(s)$，就可以得到该点对应的增益参数$K$。另一个方法是将式子化为关于$s$的多项式方程$f(s)=0$，由于在分离点或会合点，相当于这个方程在此处取到重根，则可以联立$df/ds=0$与$f(s)=0$，解出对应的$K$和$s$。
 
     \item 确定根轨迹与虚轴的交点
     

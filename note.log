@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.4.10)  3 NOV 2019 03:06
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.4.10)  8 NOV 2019 13:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,15 +680,15 @@ LaTeX Font Info:    ... okay on input line 41.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(29.87721pt, 537.75343pt, 29.87723pt)
-* v-part:(T,H,B)=(33.80392pt, 760.53699pt, 50.70593pt)
+* h-part:(L,W,R)=(59.74988pt, 478.00812pt, 59.74988pt)
+* v-part:(T,H,B)=(67.60269pt, 676.04005pt, 101.4041pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=537.75343pt
-* \textheight=760.53699pt
-* \oddsidemargin=-42.39278pt
-* \evensidemargin=-42.39278pt
-* \topmargin=-75.46606pt
+* \textwidth=478.00812pt
+* \textheight=676.04005pt
+* \oddsidemargin=-12.52011pt
+* \evensidemargin=-12.52011pt
+* \topmargin=-41.6673pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -865,22 +865,23 @@ File: figures/6.png Graphic file (type bmp)
  [9]
 File: figures/7.png Graphic file (type bmp)
 <figures/7.png>
+ [10]
 File: figures/8.png Graphic file (type bmp)
 <figures/8.png>
 File: figures/9.png Graphic file (type bmp)
 <figures/9.png>
- [10] [11] [12]
+ [11] [12] [13]
 File: figures/10.png Graphic file (type bmp)
 <figures/10.png>
- [13]
 File: figures/11.png Graphic file (type bmp)
 <figures/11.png>
+ [14]
 File: figures/12.png Graphic file (type bmp)
 <figures/12.png>
- [14] [15] [16] [17]) [18]
+ [15] [16] [17] [18]) [19]
 \openout2 = `sections/pid.aux'.
 
- (./sections/pid.tex [19
+ (./sections/pid.tex [20
 
 
 ]
@@ -888,40 +889,37 @@ File: figures/13.png Graphic file (type bmp)
 <figures/13.png>
 File: figures/14.png Graphic file (type bmp)
 <figures/14.png>
+ [21]
 File: figures/15.png Graphic file (type bmp)
 <figures/15.png>
- [20]
 File: figures/16.png Graphic file (type bmp)
 <figures/16.png>
- [21]
+ [22]
 File: figures/17.png Graphic file (type bmp)
 <figures/17.png>
 File: figures/18.png Graphic file (type bmp)
 <figures/18.png>
+ [23]
 File: figures/19.png Graphic file (type bmp)
 <figures/19.png>
- [22]
 File: figures/35.png Graphic file (type bmp)
 <figures/35.png>
+ [24]
 File: figures/36.png Graphic file (type bmp)
 <figures/36.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[23]) [24]
+ [25]) [26]
 \openout2 = `sections/root.aux'.
 
  (./sections/root.tex
 File: figures/20.png Graphic file (type bmp)
 <figures/20.png>
- [25
+ [27
 
 
 ]
 File: figures/21.png Graphic file (type bmp)
 <figures/21.png>
-) [26] [27]
+) [28] [29]
 \openout2 = `sections/freq.aux'.
 
  (./sections/freq.tex
@@ -929,15 +927,16 @@ File: figures/22.png Graphic file (type bmp)
 <figures/22.png>
 File: figures/23.png Graphic file (type bmp)
 <figures/23.png>
- [28
+ [30
 
 
 ]
 File: figures/24.png Graphic file (type bmp)
 <figures/24.png>
- [29]
+ [31]
 File: figures/25.png Graphic file (type bmp)
 <figures/25.png>
+ [32]
 LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
 (Font)              scaled to size 12.045pt on input line 121.
 LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
@@ -946,44 +945,44 @@ LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
 (Font)              scaled to size 6.0pt on input line 121.
 File: figures/26.png Graphic file (type bmp)
 <figures/26.png>
- [30]
+ [33]
 File: figures/27.png Graphic file (type bmp)
 <figures/27.png>
- [31]
 File: figures/28.png Graphic file (type bmp)
 <figures/28.png>
+ [34]
 File: figures/29.png Graphic file (type bmp)
 <figures/29.png>
- [32]
+ [35]
 File: figures/30.png Graphic file (type bmp)
 <figures/30.png>
+ [36]
 File: figures/31.png Graphic file (type bmp)
 <figures/31.png>
- [33] [34]
 File: figures/32.png Graphic file (type bmp)
 <figures/32.png>
 File: figures/33.png Graphic file (type bmp)
 <figures/33.png>
- [35]
+ [37] [38]
 File: figures/37.png Graphic file (type bmp)
 <figures/37.png>
 File: figures/38.png Graphic file (type bmp)
 <figures/38.png>
-) [36]
+) [39] [40]
 \openout2 = `sections/appendix.aux'.
 
  (./sections/appendix.tex
 Underfull \vbox (badness 10000) detected at line 41
  []
 
-[37
+[41
 
 
-] [38]
+] [42] [43]
 Underfull \vbox (badness 10000) detected at line 85
  []
 
-[39]) [40] (./note.aux (./sections/Math.aux) (./sections/M.aux) (./sections/E.aux) (./sections/TaS.aux) (./sections/pid.aux) (./sections/root.aux) (./sections/freq.aux) (./sections/appendix.aux))
+[44] [45]) [46] (./note.aux (./sections/Math.aux) (./sections/M.aux) (./sections/E.aux) (./sections/TaS.aux) (./sections/pid.aux) (./sections/root.aux) (./sections/freq.aux) (./sections/appendix.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
@@ -992,10 +991,10 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  21791 strings out of 494761
  460435 string characters out of 6171306
- 763714 words of memory out of 5000000
+ 765714 words of memory out of 5000000
  25350 multiletter control sequences out of 15000+600000
  541444 words of font info for 94 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  54i,16n,73p,363b,1467s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on note.pdf (43 pages).
+Output written on note.pdf (49 pages).
